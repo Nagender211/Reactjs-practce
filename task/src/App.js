@@ -18,6 +18,8 @@ import Spa from './componets/Spa/Spa';
 
 import MatchGame from './componets/MatchGame/MatchGame';
 
+import TodoApp from './Frontend/TodoApp/TodoApp';
+
 
 
 
@@ -740,7 +742,8 @@ class App extends Component{
           {/* <GithubPopularRepos /> */}
           {/* <ProductsFiltersGroup /> */}
           {/* <SearchState /> */}
-          <PrdoductPratice_2 />
+          {/* <PrdoductPratice_2 /> */}
+          <TodoApp />
           {/* <div>
           <ul>
 
