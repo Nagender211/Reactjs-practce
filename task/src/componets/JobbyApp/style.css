@@ -1,0 +1,71 @@
+/* General Container for Job Card */
+.job-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .job-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Style */
+  .job-card-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  
+  /* Title Style */
+  .job-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Employment Type Style */
+  .job-card-type {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Description Style */
+  .job-card-description {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  /* Location Style */
+  .job-card-location {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  /* Package Style */
+  .job-card-package {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+  }
+  
+  /* Rating Style */
+  .job-card-rating {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  

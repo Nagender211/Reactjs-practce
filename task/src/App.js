@@ -94,6 +94,8 @@ import SearchState from './componets/SearchState/SearchState';
 
 import PrdoductPratice_2 from './componets/ProductsFillterDeatils/PrdoductPratice_2';
 import MoreReact from './componets/moreConcept/MoreReact';
+import Player from './componets/VideoPlayer/Player';
+import JobbyApp from './componets/JobbyApp/JobbyApp';
 // import ReusableBanners from './componets/Reusable Banners/ReusableBanners';
 // import UserProfile from './componets/UserProfile/UserProfile';
 
@@ -743,7 +745,9 @@ class App extends Component{
           {/* <GithubPopularRepos /> */}
           {/* <ProductsFiltersGroup /> */}
           {/* <SearchState /> */}
-          <MoreReact />
+          {/* <MoreReact /> */}
+          {/* <Player /> */}
+          <JobbyApp />
           
           {/* <PrdoductPratice_2 /> */}
           {/*<TodoApp /> */}

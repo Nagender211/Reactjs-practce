@@ -6,7 +6,7 @@ const Header = () => {
     <div>
         <ul>
             <li>
-                <Link to='/counter'></Link>
+                <Link to='/counter'>counter</Link>
             </li>
             <li> 
                 <Link to='/post'>Post</Link>

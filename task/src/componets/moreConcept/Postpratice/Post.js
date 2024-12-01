@@ -4,7 +4,7 @@ class Post extends Component{
     render() {
       return (
         <div>
-          <h1>this teh post </h1>
+          
         </div>
       )
     }
