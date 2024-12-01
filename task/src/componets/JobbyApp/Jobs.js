@@ -5,9 +5,11 @@ import Cookies from 'js-cookie'
 import { Navigate } from 'react-router-dom';
 import AllJobs from './AllJobs';
 
+
 const Jobs = () =>{
   const [ProfileDetails,setProfileDetails] = useState([]);
   const [jobs,setJobs] = useState([]);
+  // const [deatails,setDetails]=useState([])
   
   const jwtToken = Cookies.get('jwt-token');
   useEffect(() => {
@@ -56,9 +58,25 @@ const Jobs = () =>{
       ))
       setJobs(updatejobs);
     }
+    // const getDeatils = async(id) =>{
+    //   const url=`https://apis.ccbp.in/jobs/:${id}`;
+    //   const options = {
+    //     method: 'GET',
+    //     headers: {
+    //       Authorization: `Bearer ${jwtToken}`,
+    //     },
+    //   }
+    //   const response = await fetch(url,options);
+    //   const data = await response.json();
+    //   console.log(data);
+    //   // const updateDetails=data.details;
+    //   // setDetails(updateDetails);
+    // }
+
     if(jwtToken){
       fetchProfile();
       getApiJobs();
+      // getDeatils();
      
     }
   
@@ -92,6 +110,7 @@ const Jobs = () =>{
           />
         ))
       }
+      {/* <DeatilsJob /> */}
       
       
     </div>

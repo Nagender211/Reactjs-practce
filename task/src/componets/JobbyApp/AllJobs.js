@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 
+
 const AllJobs = ({
   companyLogoUrl,
   employmentType,
@@ -14,7 +15,7 @@ const AllJobs = ({
 //   getId
 }) => {
     const knowDetails = (id) =>{
-        console.log(id)
+        console.log(id);
     }
   return (
     <div className="job-card">

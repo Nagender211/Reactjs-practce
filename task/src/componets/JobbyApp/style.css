@@ -1,71 +1,249 @@
-/* General Container for Job Card */
-.job-card {
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+  }
+  
+  /* Home Page Styles */
+  .home-container {
+    min-height: 100vh;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #e0e0e0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    background-color: #2557a7;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #1e4584;
+    transform: scale(1.05);
+  }
+  
+  /* Job Details Styles */
+  .details-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+  
+  .job-details-heading {
+    color: #e4ebf3;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .job-details {
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 8px;
+  }
+  
+  .job-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .company-logo {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #4f9eff;
+  }
+  
+  .company-website-link {
+    color: #4f9eff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #4f9eff;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  
+  .company-website-link:hover {
+    background-color: #4f9eff;
+    color: black;
+  }
+  
+  .job-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Skills Section */
+  .skills-heading {
+    color: #cbd7e4;
+    margin: 30px 0 20px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(79, 158, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4f9eff;
+  }
+  
+  .skill-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  /* Similar Jobs Section */
+  .similar-jobs-heading {
+    color: #c0c5ca;
+    margin: 40px 0 20px;
+  }
+  
+  .similar-jobs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .similar-job-item {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    border: 1px solid rgba(79, 158, 255, 0.3);
+  }
+  
+  .similar-job-item:hover {
+    transform: translateY(-5px);
+    border-color: #4f9eff;
+  }
+  
+  /* Job Card Styles */
+  .job-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     border-radius: 8px;
     padding: 20px;
-    margin: 20px 0;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(79, 158, 255, 0.3);
+    color: #ffffff;
   }
   
   .job-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    border-color: #4f9eff;
   }
   
-  /* Logo Style */
   .job-card-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: auto;
     margin-bottom: 15px;
-    border-radius: 4px;
+    border: 2px solid #4f9eff;
+    border-radius: 5px;
   }
   
-  /* Title Style */
   .job-card-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  /* Employment Type Style */
-  .job-card-type {
-    font-size: 18px;
-    color: #666;
+    color: #4f9eff;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
-  /* Description Style */
+  .job-card-type {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
   .job-card-description {
-    font-size: 16px;
-    color: #444;
-    margin: 5px 0;
     line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
   }
   
-  /* Location Style */
-  .job-card-location {
-    font-size: 14px;
-    color: #888;
-    margin-top: 10px;
-  }
-  
-  /* Package Style */
-  .job-card-package {
-    font-size: 16px;
-    font-weight: bold;
-    color: #222;
-    margin-top: 10px;
-  }
-  
-  /* Rating Style */
+  .job-card-location,
+  .job-card-package,
   .job-card-rating {
-    font-size: 14px;
-    color: #555;
-    margin-top: 10px;
+    color: #ffffff;
+    margin-bottom: 8px;
   }
   
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .similar-jobs-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .job-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .details-container {
+      margin: 20px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .job-card,
+  .details-container {
+    animation: fadeIn 0.5s ease-out;
+  }

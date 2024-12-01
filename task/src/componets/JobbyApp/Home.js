@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, Navigate} from 'react-router-dom'
 import Cookies from 'js-cookie'
+import './style.css';
 
 
 const Home=()=>{
