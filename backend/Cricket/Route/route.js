@@ -7,6 +7,6 @@ const {getScore} = require('../Controller/controller.js')
 const route=express.Router();
 
 
-route.get('/send-score',getScore)
+route.get('/cricket-scores',getScore)
 
 module.exports=route
