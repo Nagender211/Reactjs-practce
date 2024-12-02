@@ -750,7 +750,7 @@ class App extends Component{
           {/* <Player /> */}
           {/* <JobbyApp /> */}
           <CricketApp />
-          
+
           {/* <PrdoductPratice_2 /> */}
           {/*<TodoApp /> */}
           {/* <div>
