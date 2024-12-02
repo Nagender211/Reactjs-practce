@@ -96,6 +96,7 @@ import PrdoductPratice_2 from './componets/ProductsFillterDeatils/PrdoductPratic
 import MoreReact from './componets/moreConcept/MoreReact';
 import Player from './componets/VideoPlayer/Player';
 import JobbyApp from './componets/JobbyApp/JobbyApp';
+import CricketApp from './componets/CricketApp/CricketApp';
 // import ReusableBanners from './componets/Reusable Banners/ReusableBanners';
 // import UserProfile from './componets/UserProfile/UserProfile';
 
@@ -747,7 +748,8 @@ class App extends Component{
           {/* <SearchState /> */}
           {/* <MoreReact /> */}
           {/* <Player /> */}
-          <JobbyApp />
+          {/* <JobbyApp /> */}
+          <CricketApp />
           
           {/* <PrdoductPratice_2 /> */}
           {/*<TodoApp /> */}
